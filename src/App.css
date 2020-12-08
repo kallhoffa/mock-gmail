@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 20px 20% 20px 1fr;
 }
 
 .App-logo {
@@ -35,4 +36,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Inbox {
+  grid-column-start: 2;
+  margin-top: 20px;
+}
+.Email {
+  grid-column-start: 4;
+}
+
+.inboxEntries {
+  margin-top: 10px;
+}
+
+.inboxEntries a{
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.inboxEntries h2 {
+  margin-top: 0px;
+  font-size: 12px;
 }
