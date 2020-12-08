@@ -5,7 +5,12 @@ import { Link} from 'react-router-dom'
 const Inbox = ({emails, filterInbox}) => {
         return(
             <div className="Inbox">
-                <div>
+                <div className="compose">
+                    <Link to={'/new'}>
+                        <button>Compose</button>
+                    </Link>
+                </div>
+                <div className="search">
                     <input id='searchText' type="text"></input>
                     <button onClick={filterInbox}>Search</button>
                 </div>

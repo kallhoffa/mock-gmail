@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-columns: 20px 20% 20px 1fr;
+  grid-template-columns: 20px 300px 20px 1fr;
 }
 
 .App-logo {
@@ -42,12 +42,18 @@
   grid-column-start: 2;
   margin-top: 20px;
 }
+
 .Email {
   grid-column-start: 4;
 }
 
+.Email h1 {
+  grid-column-start: 4;
+  margin-top: 10px;
+}
 .inboxEntries {
   margin-top: 10px;
+  background-color: gainsboro;
 }
 
 .inboxEntries a{
@@ -58,4 +64,48 @@
 .inboxEntries h2 {
   margin-top: 0px;
   font-size: 12px;
+}
+
+
+.search input {
+  padding-left: 5px;
+  padding-right: 5px;
+ width: 186px;
+}
+
+.search button {
+  width: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.compose{
+  padding: 0px;
+  width: 300px;
+}
+
+.compose button{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.new-email {
+  padding-top: 10px;
+}
+
+.new-email textarea{
+  margin-top: 10px;
+  width: 90%;
+  height: 500px;
+}
+.new-email input{
+  margin-top: 10px;
+}
+
+.new-email button{
+  margin-top: 10px;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
 }

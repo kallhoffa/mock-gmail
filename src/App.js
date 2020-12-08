@@ -3,6 +3,8 @@ import './App.css';
 import React from 'react'
 import Inbox from './Components/Inbox'
 import Email from './Components/Email'
+import Compose from './Components/Compose'
+
 
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
@@ -29,15 +31,22 @@ class App extends React.Component {
     //
   }
 
+  // newEmail(){
+
+  // }
+
   render(){
     return (
       <div className="App">
         <Router>
-          <Inbox emails={this.state.searchSet} filterInbox={this.filterInbox}/>
+          <Inbox 
+            emails={this.state.searchSet} 
+            filterInbox={this.filterInbox}/>
           <Route 
             path="/email/:emailId" 
             render={(props) => <Email {...props} emails={this.state.emails} />}
           />
+          <Route path="/new" component={Compose}/>
         </Router>
 
       </div>
