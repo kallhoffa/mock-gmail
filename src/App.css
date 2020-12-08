@@ -54,6 +54,10 @@
 .inboxEntries {
   margin-top: 10px;
   background-color: gainsboro;
+  padding: 2px;
+  padding-left: 5px;
+  padding-bottom: 1px;
+  border-radius: 5px;
 }
 
 .inboxEntries a{
